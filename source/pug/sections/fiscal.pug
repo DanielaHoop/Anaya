@@ -1,0 +1,69 @@
+include ../templates/config.pug
+- site.page = 'Fiscal'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li.active: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Fiscal
+                  img(src="img/Derecho_Fiscal_Anaya-abogados.png", alt="")
+                  hr.hrbold
+
+                  p Ofrecemos asesoría a nuestros clientes en la planeación fiscal de sus negocios, planeación patrimonial, consultoría respecto al alcance de sus obligaciones fiscales generales y los efectos de transacciones específicas.
+
+                  p Asistimos en procesos de comprobación iniciados por autoridades fiscales y en la defensa de nuestros clientes en procedimientos amistosos, recursos administrativos y litigios en materia tributaria.
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1.m-top-30
+                .row
+                  .col-sm-2
+                    img(src="img/consultoria.png", alt="consultoría fiscal")
+                  .col-sm-10
+                    h2 Consultoría Fiscal
+                    p Asesoramos a empresas y personas físicas respecto al alcance de sus obligaciones fiscales en México y las alternativas que tienen para hacer más eficiente el cumplimiento de dichas obligaciones. Para esto, analizamos los efectos fiscales de transacciones específicas y operaciones regulares de nuestros clientes, atendiendo la legislación nacional y tratados internacionales aplicables.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="consultoria-fiscal.html") Ver más
+                .row
+                  .col-sm-2
+                    img(src="img/planeacion.png", alt="planeación")
+                  .col-sm-10
+                    h2 Planeación Fiscal y Patrimonial
+                    p Asistimos a empresas y personas físicas a planear la administración de sus bienes, la realización de operaciones relevantes o la disposición de su patrimonio, cuidando la eficiencia de sus decisiones desde el punto de vista fiscal.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="planeacion-fiscal.html") Ver más
+                .row
+                  .col-sm-2
+                    img(src="img/litigio.png", alt="Litigio Fiscal")
+                  .col-sm-10
+                    h2 Litigio Fiscal
+                    p Defendemos los intereses de nuestros clientes en controversias relacionadas con determinación de créditos fiscales por impuestos locales y federales, a través de los medios amistosos previstos en la legislación, recursos administrativos o procedimientos jurisdiccionales.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="litigio-fiscal.html") Ver más
+                .row
+                  .col-sm-12.center
+                    a.but(href="areas-practica.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

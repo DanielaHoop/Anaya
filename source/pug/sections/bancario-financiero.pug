@@ -1,0 +1,47 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Bancario - Financiero
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p Nuestra práctica incluye planeación, negociación y ejecución de distintas transacciones bancarias y comerciales, así como asesoría en aspectos regulatorios.
+
+                      p Nuestro equipo cuenta con amplia experiencia asesorando a acreedores y deudores tanto nacionales como extranjeros en el financiamiento de proyectos y financiamientos estructurados, así como asistencia a instituciones financieras en operaciones ordinarias y en el cumplimiento de sus obligaciones ante las autoridades mexicanas.
+
+                      p Ofrecemos asesoría en la formación de fideicomisos emisores, de garantía, administración, inmobiliarios y testamentarios, así como en las constituciones, modificaciones o cancelaciones de hipotecas, prendas y otras garantías para financiar sus operaciones.
+                    .col-sm-5
+                      img(src="img/anaya-bancario.jpg", alt="")
+
+                  p Cuidamos las soluciones que ofrecemos desde una perspectiva integral, por lo que nuestra asesoría considera los efectos fiscales de cada operación. Para esto, atendemos al tratamiento fiscal de los intereses o ganancias de capital que podrían derivar de cada transacción, así como el cumplimiento de obligaciones relacionadas, tales como la presentación de reportes y efectuación de retenciones debidas.
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="corporativo.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

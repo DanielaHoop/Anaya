@@ -1,0 +1,48 @@
+include ../templates/config.pug
+- site.page = 'Consultoría Fiscal'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Consultoría Fiscal
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p Asesoramos a empresas y personas físicas respecto al alcance de sus obligaciones fiscales en México y las alternativas que tienen para hacer más eficiente el cumplimiento de dichas obligaciones. Para esto, analizamos las características de nuestros clientes, su actividad y expectativas de negocio conforme a la legislación fiscal vigente, incluyendo la posible causación de impuestos locales y federales, así como la aplicación de instrumentos internacionales.
+
+                      p Analizamos los efectos fiscales en México de transacciones específicas y operaciones regulares para determinar la posible causación de impuestos y cualquier otra obligación ante las autoridades fiscales mexicanas.
+
+
+                      
+                    .col-sm-5
+                      img(src="img/anaya-consultoria_fiscal-1.jpg", alt="")
+                  p Brindamos asesoría especializada en materia de doble tributación derivada de operaciones internacionales, ya sean celebradas entre partes independientes o partes relacionadas. Nuestra práctica contempla el análisis de la legislación mexicana y la extensa red de tratados internacionales que en materia tributaria ha celebrado México, permitiendo la optimización de resultados a nivel internacional.
+                  
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="fiscal.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

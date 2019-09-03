@@ -1,0 +1,44 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Competencia económica
+                  .row.m-top-30
+                    .col-sm-7
+                      p Ofrecemos asesoría en procesos de notificación de concentraciones ante la Comisión Federal de Competencia Económica con motivo de fusiones y adquisiciones.
+
+                      p Asesoramos y representamos a nuestros clientes en procedimientos de investigación por la posible comisión de prácticas monopólicas relativas y absolutas, incluyendo la solicitud de programas de inmunidad o de reducción de sanciones con motivo de la comisión de estas últimas.
+
+                      p Revisamos sus prácticas comerciales y negociaciones contractuales a fin de verificar que las mismas se encuentren en cumplimiento con la legislación y regulación en materia de competencia económica. Desde el punto de vista preventivo, impartimos cursos de capacitación a empleados de áreas clave dentro de las empresas a fin de evitar su incursión en conductas sancionadas por la ley aplicable.
+                    .col-sm-5
+                      img(src="img/ma2-featured.jpg", alt="")
+            
+            .row
+              .col-sm-12.center
+                a.but(href="corporativo.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

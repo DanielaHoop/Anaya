@@ -1,0 +1,60 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1.m-top-30
+                  h1 Energético
+                  hr.hrbold
+
+                  p Asesoramos a clientes de la industria de hidrocarburos, energías renovables y electricidad respecto a la regulación específica para la realización de sus negocios en México, desde su establecimiento, participación en procedimientos de contratación pública, subastas, relaciones gubernamentales y solución de controversias.
+
+                  p Nuestro equipo cuenta con profundo conocimiento de la legislación aplicable y se mantiene atento al dinamismo de la materia, tanto en el ámbito nacional como internacional, ofreciendo respuestas efectivas respecto a cuestionamientos específicos y proponiendo opciones de vanguardia.
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1.m-top-30
+                  .row
+                    .col-sm-2
+                      img(src="img/hidrocarburos.png", alt="bancario financiero")
+                    .col-sm-10
+                      h2 Hidrocarburos (Industria Petroquímica y Gas Natural)
+                      p Asesoramos en el desarrollo y estructuración de proyectos de inversión en la industria de hidrocarburos en México tanto a empresas nacionales como extranjeras.
+                      .row
+                        .col-sm-2.offset-md-10
+                          a.but(href="hidrocarburos.html") Ver más
+                  .row
+                    .col-sm-2
+                      img(src="img/electricidad.png", alt="bancario financiero")
+                    .col-sm-10
+                      h2 Electricidad
+                      p En relación con la industria eléctrica, proveemos asesoría legal a empresas que se encuentran en procesos licitatorios, subastas, negociación y celebración de contratos, así como asistencia en la solución de controversias.
+                      .row
+                        .col-sm-2.offset-md-10
+                          a.but(href="electricidad.html") Ver más
+                  
+                  .row
+                    .col-sm-12.center
+                      a.but(href="corporativo.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

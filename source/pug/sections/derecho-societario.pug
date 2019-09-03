@@ -1,0 +1,47 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+
+                  h1 Derecho Societario / Gobierno Corporativo
+                  .row.m-top-30
+                    .col-sm-7
+                      p Contamos con amplia experiencia en brindar asesoría societaria a nuestros clientes. Proporcionamos soluciones que se adecuan a sus necesidades, tomando en consideración el contexto particular, desarrollo en el sector y la complejidad de los mercados nacionales e internacionales en los cuales se encuentran inmersos.
+
+                      p Brindamos planeación estratégica para comenzar operaciones en México, asistimos en la constitución de las entidades requeridas, elaboración de estatutos, fortalecimiento de prácticas de buen gobierno corporativo, así como orientación en el funcionamiento de los órganos de gobierno y de la sociedad en general.
+                    .col-sm-5
+                      img(src="img/anaya-gobierno_corporativo.jpg", alt="")
+
+                  p Ofrecemos asesoría durante las negociaciones que las operaciones de nuestros clientes requieren, analizamos las implicaciones legales de sus distintas transacciones, estructuramos los documentos y figuras legales necesarias para soportar sus decisiones e interpretamos el alcance de las obligaciones que asumen frente a terceros.
+
+                  p Nuestra práctica atiende al cumplimiento de las obligaciones corporativas de las empresas, incluyendo celebración de asambleas o resoluciones unánimes de accionistas o socios, así como de sesiones del consejo de administración o de gerentes, otorgamiento de poderes, mantenimiento de registros ante las distintas autoridades, entre otros.
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="corporativo.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

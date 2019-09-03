@@ -1,0 +1,48 @@
+include ../templates/config.pug
+- site.page = 'Consultoría Fiscal'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Litigio Fiscal
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p Ofrecemos asesoría integral para defender los intereses de nuestros clientes respecto a la determinación de créditos fiscales interpuestos por autoridades federales y locales así como la determinación de omisiones en el cumplimiento de obligaciones fiscales.
+
+                      p Nuestra práctica se refiere a procedimientos derivados del ejercicio de facultades de comprobación de las autoridades fiscales, resoluciones que niegan devoluciones debidas a nuestros clientes por saldos a favor o pago de lo indebido, así como la determinación de créditos fiscales y multas por supuestos incumplimientos de obligaciones fiscales.
+
+
+                      br
+                      br
+                    .col-sm-5
+                      img(src="img/anaya-litigio_fiscal-1.jpg", alt="")
+                  p Nuestro conocimiento de la legislación mexicana y tratados internacionales vigentes nos permite ofrecer estrategias de defensa para la exitosa resolución de las controversias que contemplan una amplia gama de opciones, desde la interposición de medios alternativos de solución de controversias, la interposición de recursos administrativos o la defensa a través de procedimientos jurisdiccionales en sus distintas etapas.
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="fiscal.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

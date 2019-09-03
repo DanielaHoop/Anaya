@@ -1,0 +1,42 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Electricidad
+                  .row.m-top-30
+                    .col-sm-7
+                      p En relación con la industria eléctrica, proveemos asesoría legal a empresas que se encuentran en procesos licitatorios sobre la prestación de servicios o la compra de bienes convocados por la Comisión Federal de Electricidad (CFE) relacionados con proyectos nacionales e internacionales, subastas convocadas por el Centro Nacional de Control de Energía, y actividades del Mercado Eléctrico.
+
+                      p Los servicios que proveemos incluyen la obtención de los permisos necesarios así como asesoría en la viabilidad del proyecto. Nuestra asistencia se extiende a la negociación y celebración de contratos, y asesoría para la solución de controversias.
+                    .col-sm-5
+                      img(src="img/anaya-electricidad-1.jpg", alt="")
+
+            .row
+              .col-sm-12.center
+                a.but(href="energetico.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

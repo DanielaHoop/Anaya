@@ -1,0 +1,111 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li.active: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                    h1 Equipo
+                    img(src="img/Anaya_abogados_Anaya-abogados.png", alt="")
+                    p.m-top-30 Nuestro principal activo es nuestro equipo. Por eso, reunimos abogados con el más alto conocimiento en las distintas áreas de práctica que ofrecemos, así como con valores y principios éticos que los distinguen entre los demás.
+                    .row
+                      .col-lg-6.col-sm-12
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Edgar M. Anaya Bourgoing
+                            a(href="mailto:edgar.anaya@anaya-abogados.com") edgar.anaya@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Andrea Kaiser Jaime
+                            a(href="mailto:andrea.kaiser@anaya-abogados.com") andrea.kaiser@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Jesús Antonio López Torres
+                            a(href="mailto:jesus.lopez@anaya-abogados.com") jesus.lopez@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Jocelyn Jiménez Meneses
+                            a(href="mailto:jocelyn.jimenez@anaya-abogados.com") jocelyn.jimenez@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p José García Cabriales
+                            a(href="mailto:jose.garcia@anaya-abogados.com") jose.garcia@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Julia Ruiz Cantú
+                            a(href="mailto:julia.ruiz@anaya-abogados.com") julia.ruiz@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Janetzy Bucio Gallardo
+                            a(href="mailto:janetzy.bucio@anaya-abogados.com") janetzy.bucio@anaya-abogados.com
+                      .col-lg-6.col-sm-12
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Fabiola Díaz Prado
+                            a(href="mailto:fabiola.diaz@anaya-abogados.com") fabiola.diaz@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Agustín Meixueiro Luna
+                            a(href="mailto:agustin.meixueiro@anaya-abogados.com") agustin.meixueiro@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Cecilia García Naranjo García Sabaté
+                            a(href="mailto:cecilia.garcia.naranjo@anaya-abogados.com") cecilia.garcia.naranjo@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Daniel Bucio Cruz
+                            a(href="mailto:daniel.bucio@anaya-abogados.com") daniel.bucio@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Lorena Escalente Casillas
+                            a(href="mailto:lorena.escalante@anaya-abogados.com") lorena.escalante@anaya-abogados.com
+                        .row.m-top-30
+                          .col-2
+                            img(src="img/icon_feature_people.png")
+                          .col-10
+                            p Juan José Ramírez-Gamíz
+                            a(href="mailto:juanjose.ramirez-gamiz@anaya-abogados.com") juanjose.ramirez-gamiz@anaya-abogados.com
+
+        
+        include ../templates/js.pug

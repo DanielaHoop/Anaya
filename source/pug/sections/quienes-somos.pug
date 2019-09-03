@@ -1,0 +1,40 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li.active: a(href="quienes-somos.html") Quiénes Somos
+                  li.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Quiénes Somos
+                  img(src="img/Quienes_somos_Anaya-abogados.png", alt="")
+                  .m-top-30
+                  p Anaya Abogados es un despacho mexicano que ofrece soluciones integrales y eficientes a personas físicas y empresas nacionales y extranjeras en las prácticas de derecho corporativo, fiscal y administrativo.
+
+                  p Nuestro conocimiento del marco jurídico mexicano y constante actualización en el contexto internacional, nos convierte en aliados fundamentales para el desarrollo de los proyectos que nos son encomendados.
+
+                  p El compromiso con nuestra profesión y la lealtad a nuestros clientes nos definen como una opción extraordinaria de representación jurídica en México, con enfoque global, alta especialización y soluciones diseñadas a las circunstancias de cada proyecto.
+
+                  p La responsabilidad social es parte de nuestra filosofía, por lo que enriquecemos nuestra práctica y experiencia con trabajo Pro-Bono y participación académica en las principales universidades del país. Estamos comprometidos con aportar soluciones a las distintas necesidades sociales de México y colaborar en el desarrollo de la práctica del derecho.
+
+
+            
+
+        
+        include ../templates/js.pug

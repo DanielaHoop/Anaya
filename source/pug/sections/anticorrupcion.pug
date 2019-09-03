@@ -1,0 +1,47 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Anticorrupción
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p En apego a la legislación mexicana e internacional vigente, incluyendo la Foreign Corrupt Practices Act (FCPA por su acrónimo en inglés) de los Estados Unidos de América y el UK Bribery Act, proporcionamos asesoría a nuestros clientes sobre medidas de anticorrupción a ser implementadas.
+
+                      p Nuestra práctica incluye el concientizar a empresas y personas físicas sobre el ordenamiento jurídico mexicano en materia anticorrupción para así evitar que en el desarrollo de sus negocios incurran en acciones irregulares o prácticas no permitidas bajo las leyes mexicanas.
+
+                      
+                    .col-sm-5
+                      img(src="img/anaya-anticorrupcion-1.jpg", alt="")
+
+                  
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="administrativo.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

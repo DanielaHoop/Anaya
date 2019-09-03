@@ -1,0 +1,45 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Derecho de Seguro y Finanzas
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p Ofrecemos análisis de pólizas relevantes para nuestros clientes, así como sus contratos y operaciones para diseñar una estrategia de respuesta frente a su potencial responsabilidad civil o contractual.
+
+                      p Diseño de esquema de gestión de riesgos que de la mano de contratación de seguros y/o finanzas representan una oportunidad para optimizar recursos.
+
+                      p Obtención de autorizaciones para operar y/o organizarte como instituciones de seguros y/o finanzas, así como asesoría en compliance.
+                    .col-sm-5
+                      img(src="img/anaya-entretenimiento.jpg", alt="")
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="corporativo.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

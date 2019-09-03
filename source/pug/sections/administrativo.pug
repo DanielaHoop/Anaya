@@ -1,0 +1,79 @@
+include ../templates/config.pug
+- site.page = 'Administrativo'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.relative.active: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li.active: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Administrativo
+                  img(src="img/Derecho_Administrativo_Anaya-abogados.png", alt="")
+                  hr.hrbold
+
+                  p Ofrecemos consultoría y asistencia en trámites y contrataciones con diversas autoridades federales, estatales y municipales, así como con empresas paraestatales. Nuestra práctica incluye representación en relaciones gubernamentales y asesoría en el cumplimiento de regulación anticorrupción.
+
+                  p Tenemos amplia experiencia asesorando procedimientos de contratación pública, incluyendo licitaciones y celebración de contratos. También asistimos en la resolución de controversias derivadas de contratos públicos, planteando soluciones efectivas y viables que se extienden a los tres ámbitos de gobierno: federal, estatal y municipal.
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1.m-top-30
+                .row
+                  .col-sm-2
+                    img(src="img/energ.png", alt="bancario financiero")
+                  .col-sm-10
+                    h2 Energético
+                    p Nuestra práctica se extiende a la industria de hidrocarburos, energías renovables y electricidad, atendiendo la regulación específica para la realización de sus actividades en México, desde su establecimiento, participación en procedimientos de contratación pública, subastas de energía, relaciones gubernamentales y solución de controversias.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="energetico.html") Ver más
+                .row
+                  .col-sm-2
+                    img(src="img/relaciones-gub.png", alt="bancario financiero")
+                  .col-sm-10
+                    h2 Relaciones Gubernamentales
+                    p Proporcionamos asesoría integral en todas las fases del procedimiento relativo a adquisiciones gubernamentales y ejecución de obras públicas, ya sea que se realicen por adjudicación directa, invitación o licitación. Los servicios que proveemos incluyen la realización de trámites administrativos y el cumplimiento de obligaciones relacionadas con la actividad de nuestros clientes.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="relaciones-gubernamentales.html") Ver más
+                .row
+                  .col-sm-2
+                    img(src="img/anticorr.png", alt="bancario financiero")
+                  .col-sm-10
+                    h2 Anticorrupción
+                    p Asistimos a nuestros clientes en la prevención de actos de corrupción. Brindando capacitación y mecanismos de control para evitar acciones irregulares o violaciones a la ley en el desarrollo de sus negocios.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="anticorrupcion.html") Ver más
+                .row
+                  .col-sm-2
+                    img(src="img/litigio.png", alt="bancario financiero")
+                  .col-sm-10
+                    h2 Litigio Administrativo
+                    p Ofrecemos asesoría integral para defender los intereses de nuestros clientes respecto a actos de autoridades federales, estatales y municipales o alcaldías.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="litigio-administrativo.html") Ver más
+
+                .row
+                  .col-sm-12.center
+                    a.but(href="areas-practica.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

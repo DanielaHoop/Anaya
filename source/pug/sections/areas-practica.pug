@@ -1,0 +1,48 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-sm-12.smaller
+                    h1 Áreas de práctica
+                    h2 Entre nuestras áreas de práctica se encuentran:
+                    .row.justify-content-md-center
+                        .col-3.bloap
+                            img(src="img/corporativo.png", alt="")
+                            h3 Corporativo
+                            p Ofrecemos asesoría en la planeación de negocios en México, incluyendo diseño, constitución o formación de vehículos de inversión, esquemas de contratación y cumplimiento de obligaciones corporativas, así como aspectos legales para la operación de los negocios, incluyendo transacciones bancarias y operaciones con partes relacionadas y terceros independientes; fusiones, escisiones y adquisiciones e implementación de estrategias financieras.
+                            a.but(href="corporativo.html") Conoce más
+                        .col-3.ml-md-auto.bloap
+                            img(src="img/administrativo.png", alt="")
+                            h3 Administrativo
+                            p Ofrecemos consultoría y asistencia en trámites y contrataciones con diversas autoridades federales, estatales y municipales, así como con empresas paraestatales. Nuestra práctica incluye representación en relaciones gubernamentales y asesoría en el cumplimiento de regulación anticorrupción.
+                            a.but(href="administrativo.html") Conoce más
+                        .col-3.ml-md-auto.bloap
+                            img(src="img/fiscal.png", alt="")
+                            h3 Fiscal
+                            p Proveemos soluciones efectivas y viables en materia tributaria, para el éxito de sus operaciones y negocios en México. Con este fin, asistimos a personas físicas y entidades en temas de consultoría, planeación fiscal, planeación patrimonial y litigio.
+                            a.but(href="fiscal.html") Conoce más
+
+
+            
+
+        
+        include ../templates/js.pug

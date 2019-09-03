@@ -1,0 +1,47 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Relaciones Gubernamentales
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p Proporcionamos asesoría integral en todas las fases del procedimiento relativo a adquisiciones gubernamentales y ejecución de obras públicas, ya sea que se realicen por adjudicación directa, invitación o licitación (o concurso abierto, según sea el caso); ello desde la publicación de la convocatoria o invitación, hasta la emisión del fallo y firma del contrato, incluyendo posibles objeciones a los términos del proceso de contratación o adjudicación. Asistimos a nuestros clientes en el cumplimiento de las disposiciones legales aplicables para la participación de dichos procesos.
+
+                      p Brindamos asesoría para la estructuración de Asociaciones Público-Privadas coadyuvando para aumentar los niveles de competitividad de nuestros clientes. Asimismo, hemos participado en el desarrollo de convenios tecnológicos y de cooperación con Empresas Productivas del Estado (EPES) y organismos descentralizados.
+
+                      
+                    .col-sm-5
+                      img(src="img/anaya-relaciones-1.jpg", alt="")
+
+                  p Como parte de nuestros servicios ofrecemos asistencia en la realización de todos los trámites, permisos, licencias y autorizaciones requeridos para la realización de las actividades de nuestros clientes.
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="administrativo.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug

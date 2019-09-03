@@ -1,0 +1,63 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+	include ../templates/head.pug
+	body
+		include ../templates/menu.pug  
+
+		.container
+			.row.justify-content-md-center
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="quienes-somos.html")
+							.overlay-menu
+							.menu-abs
+								img(src="img/derecho-administrativo.png")
+							img.impo(src="img/icon-couple.png", alt="icono quienes somos")
+							.impo-1
+								p Quiénes Somos
+
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="areas-practica.html")
+							.overlay-menu
+							.menu-abs
+								img.menu-abs(src="img/derecho-fiscal.png")
+							img.impo(src="img/icon-gavel.png", alt="")
+							.impo-1
+								p Áreas de práctica
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="equipo.html")
+							.overlay-menu
+							.menu-abs
+								img.menu-abs(src="img/asesoria.png")
+							img.impo(src="img/icon-family.png", alt="")
+							.impo-1
+								p Equipo
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="publicaciones.html")
+							.overlay-menu
+							.menu-abs
+								img.menu-abs(src="img/derecho-corporativo.png")
+							img.impo(src="img/icon-script.png", alt="")
+							.impo-1
+								p Publicaciones
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="contacto.html")
+							.overlay-menu
+							.menu-abs
+								img.menu-abs(src="img/derecho_bancario-1.png")
+							img.impo(src="img/icon-adress.png", alt="")
+							.impo-1
+								p Contacto
+
+			
+
+		
+		include ../templates/js.pug

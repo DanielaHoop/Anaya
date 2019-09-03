@@ -1,0 +1,47 @@
+include ../templates/config.pug
+- site.page = 'Consultoría Fiscal'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="quienes-somos.html") Quiénes Somos
+                  li.active.relative: a(href="areas-practica.html") Áreas de práctica
+                    ul.current-menu-item
+                      li: a(href="corporativo.html") Corporativo
+                      li: a(href="administrativo.html") Administrativo
+                      li: a(href="fiscal.html") Fiscal
+                  li: a(href="equipo.html") Equipo
+                  li: a(href="publicaciones.html") Publicaciones
+                  li: a(href="contacto.html") Contacto
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Planeación Fiscal y Patrimonial
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p Asesoramos a empresas nacionales e internacionales para el éxito de sus operaciones en México, a través de la planeación de sus negocios y estructuración de operaciones relevantes que les permitan disminuir sus cargas fiscales con apego a la legislación mexicana y tratados internacionales aplicables.
+
+                      p Apoyamos a personas físicas en su planeación patrimonial y la de sus familias para hacer más eficiente la administración de sus bienes presentes y futuros, acrecentar sus patrimonios y facilitar las disposiciones de sus bienes, ya sea en vida o por causa de muerte.
+
+                      
+                    .col-sm-5
+                      img(src="img/planeacion.jpg", alt="")
+
+                  
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="fiscal.html") Regresar
+
+
+                    
+
+        
+        include ../templates/js.pug
