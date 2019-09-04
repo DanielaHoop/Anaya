@@ -15,6 +15,7 @@ class Contacto
     private $telefono;
     private $email;
     private $comentario;
+    private $asunto;
 
     public function __construct()
     {
@@ -34,12 +35,12 @@ class Contacto
     public function save()
     {
 
-        if (!($sentencia = $this->db->prepare("INSERT INTO `contacto` (`nombre`,`telefono`,`email`,`comentario`)  VALUES (?,?,?,?)"))) {
+        if (!($sentencia = $this->db->prepare("INSERT INTO `contacto` (`nombre`,`telefono`,`email`,`comentario`,`asunto`)  VALUES (?,?,?,?,?)"))) {
             echo "Falló la preparación: (" . $this->db->errno . ") " . $this->db->error;
         }
 
 
-        if (!$sentencia->bind_param("ssss", $this->nombre,$this->telefono, $this->email, $this->comentario)) {
+        if (!$sentencia->bind_param("sssss", $this->nombre,$this->telefono, $this->email, $this->comentario, $this->asunto)) {
             echo "Falló la vinculación de parámetros: (" . $sentencia->errno . ") " . $sentencia->error;
         }
 
@@ -117,5 +118,21 @@ class Contacto
     public function setComentario($comentario)
     {
         $this->comentario = $comentario;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAsunto()
+    {
+        return $this->asunto;
+    }
+
+    /**
+     * @param mixed $asunto
+     */
+    public function setAsunto($asunto)
+    {
+        $this->asunto = $asunto;
     }
 }
