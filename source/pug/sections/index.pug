@@ -1,11 +1,11 @@
 include ../templates/config.pug
 - site.page = 'Inicio'
-- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js', 'js/jquery.translate.js', 'js/main.js'];
 
 doctype
 html(lang="es")
 	include ../templates/head.pug
-	body
+	body.trn
 		include ../templates/menu.pug  
 
 		.container
@@ -38,15 +38,15 @@ html(lang="es")
 							img.impo(src="img/icon-family.png", alt="")
 							.impo-1
 								p Equipo
-				.col-lg-2.col-sm-6.col-xs-12
-					.sec-home
-						a(href="publicaciones.html")
-							.overlay-menu
-							.menu-abs
-								img.menu-abs(src="img/derecho-corporativo.png")
-							img.impo(src="img/icon-script.png", alt="")
-							.impo-1
-								p Publicaciones
+				//- .col-lg-2.col-sm-6.col-xs-12
+				//- 	.sec-home
+				//- 		a(href="publicaciones.html")
+				//- 			.overlay-menu
+				//- 			.menu-abs
+				//- 				img.menu-abs(src="img/derecho-corporativo.png")
+				//- 			img.impo(src="img/icon-script.png", alt="")
+				//- 			.impo-1
+				//- 				p Publicaciones
 				.col-lg-2.col-sm-6.col-xs-12
 					.sec-home
 						a(href="contacto.html")
@@ -57,7 +57,7 @@ html(lang="es")
 							.impo-1
 								p Contacto
 
-			
+				
 
 		
 		include ../templates/js.pug

@@ -1,0 +1,89 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container.corp
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="about-us.html") About Us
+                  li.relative: a(href="practice-areas.html") Practice Areas
+                    ul.current-menu-item
+                      li.active: a(href="corporate.html") Corporate Law
+                      li: a(href="administrative.html") Administrative Law
+                      li: a(href="tax.html") Tax Law
+                  li: a(href="team.html") Team
+                  //li: a(href="article.html") Articles
+                  li: a(href="contact.html") Contact
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Corporate Law
+                  img(src="img/Derecho_Corporativo_Anaya-abogados.png", alt="")
+                  hr.hrbold
+
+                  p We advise our clients in the planning of their business in Mexico to establish a solid foundation from a pre-operational level, implement growth strategies and maintain control of its corporate structure and comply with the obligations required for the proper development of its business activities.
+
+                  p Our assistance covers legal issues directly regarding the businesses operations, including banking transactions and operations with related and independent third parties.
+
+                  p We have wide experience in mergers, demergers and transformations of legal entities in Mexico, as well as different types of transactions and implementation of projects, including, among others, joint ventures, project financing, acquisitions, financial transactions, incorporations, etc.
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1.m-top-30
+                .row
+                  .col-sm-2
+                    img(src="img/icon_feature_briefcase.png", alt="")
+                  .col-sm-10
+                    h2 Banking and Finance
+                    p Our practice   includes planning,   negotiation and execution of   diverse banking and commercial   transactions as well  as advising on   regulatory   issues.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="banking-finance.html") Read more
+                .row
+                  .col-sm-2
+                    img(src="img/icon_feature_binoculars.png", alt="")
+                  .col-sm-10
+                    h2 Corporate Governance
+                    p We have wide experience in corporate governance counseling. We offer solutions that suit to our Clients’ needs, taking into consideration the particular context, their sector development, and the complexity of the national and international markets.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="corporate-governance.html") Read more
+                .row
+                  .col-sm-2
+                    img(src="img/icon_feature_app.png", alt="")
+                  .col-sm-10
+                    h2 Mergers & Acquisitions
+                    p We advise on corporate restructuring and growth strategies of business groups through national and international mergers and acquisitions, covering different markets and sectors.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="mergers.html") Read more
+                .row
+                  .col-sm-2
+                    img(src="img/icon_feature_image.png", alt="")
+                  .col-sm-10
+                    h2 Insurance and Bond Law
+                    p We offer   policy   analysis,   design   of risk   management   schemes   and   assistance   in obtaining   authorizations for   insurance and   surety institutions
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="insurance.html") Read more
+                .row
+                  .col-sm-2
+                    img(src="img/icon_feature_image.png", alt="")
+                  .col-sm-10
+                    h2 Economic Competition
+                    p We advise in processes of notification of concentrations before the COFECE, investigation procedures for monopolistic practices and compliance in matters of economic competition.
+                    .row
+                      .col-sm-2.offset-md-10
+                        a.but(href="competencia-economica.html") Read more
+                .row.m-top-50.m-bot-50
+                  .col-sm-12.center
+                    a.but(href="practice-areas.html") Back
+
+
+                    
+
+        
+        include ../templates/js.pug

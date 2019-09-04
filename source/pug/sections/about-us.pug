@@ -1,0 +1,40 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu-ing.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li.active: a(href="about-us.html") About Us
+                  li.relative: a(href="practice-areas.html") Practice Areas
+                    ul.current-menu-item
+                      li: a(href="corporate.html") Corporate Law
+                      li: a(href="administrative.html") Administrative Law
+                      li: a(href="tax.html") Tax Law
+                  li: a(href="team.html") Team
+                  //li: a(href="article.html") Articles
+                  li: a(href="contact.html") Contact
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 About Us
+                  img(src="img/Quienes_somos_Anaya-abogados.png", alt="")
+                  .m-top-30
+                  p Anaya Abogados is a Mexican Firm that offers complete and efficient solutions to foreign and domestic persons and legal enterprises in their corporate law, tax law and administrative law practices.
+
+                  p Our knowledge of the Mexican legal framework and our constant update in the international context transform us in essential partners for the development of the entrusted projects.
+
+                  p The commitment with our profession and the loyalty to our clients define us as an extraordinary choice for legal representation in Mexico, with global focus, high expertise and specialized solutions tailored to the circumstances of each project.
+
+                  p Social responsibility is part of our philosophy, so we enrich our practice and experience with Pro-Bono work and academic participation in major universities of the country. We are committed to provide solutions to the different social needs in Mexico and to collaborate in the development of the practice of law.
+
+
+            
+
+        
+        include ../templates/js.pug

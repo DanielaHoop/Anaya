@@ -1,0 +1,52 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu-ing.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="about-us.html") About Us
+                  li.relative: a(href="practice-areas.html") Practice Areas
+                    ul.current-menu-item
+                      li: a(href="corporate.html") Corporate Law
+                      li: a(href="administrative.html") Administrative Law
+                      li: a(href="tax.html") Tax Law
+                  li: a(href="team.html") Team
+                  //li: a(href="article.html") Articles
+                  li.active: a(href="contact.html") Contact
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Contact Us
+                  img(src="http://placehold.it/1200x300", alt="")
+                  hr.cont
+                  .row.m-top-30
+                    .col-lg-7
+                      h2 Thank you for leaving your data, we will be in touch with you soon.
+                          
+                    
+                    .col-lg-5
+                      p Main office in Mexico City
+                      .row
+                        .col-sm-12
+                          img.float(src="img/direc.png", alt="")
+                          a(href="" target="_blank") Avenida Porfirio Díaz 79, Col. Del Valle Centro, C.P. 03100, Ciudad de México
+                          hr
+
+                      .row
+                        .col-sm-12
+                          img.float(src="img/email.png", alt="")
+                          a(href="mailto:contacto@anaya-abogados.com" target="_blank") contacto@anaya-abogados.com
+                          hr
+                      .row
+                        .col-sm-12
+                          img.float(src="img/phone.png", alt="")
+                          a(href="tel:(52) 55 5335 0707" target="_blank") (52) 55 5335 0707
+                          hr
+
+        include ../templates/js.pug

@@ -1,0 +1,47 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="about-us.html") About Us
+                  li.relative.active: a(href="practice-areas.html") Practice Areas
+                    ul.current-menu-item
+                      li: a(href="corporate.html") Corporate Law
+                      li: a(href="administrative.html") Administrative Law
+                      li: a(href="tax.html") Tax Law
+                  li: a(href="team.html") Team
+                  //li: a(href="article.html") Articles
+                  li: a(href="contact.html") Contact
+            .row
+                .col-lg-10.justify-content-md-center.offset-md-1
+                  h1 Banking and Finance
+                  .row.m-top-30
+                    .col-sm-7
+
+                      p Our practice includes planning, negotiation and execution of various banking and commercial transactions, as well as advising in regulatory matters.
+
+                      p Our team has ample experience advising both domestic and foreign creditors and debtors in project finance and structured finance, as well as supporting financial institutions in ordinary operations and compliance of obligations with Mexican authorities.
+
+                      p We offer advice on the creation of issuers, guarantee, administration, estate and testamentary trusts, as well as the granting, amendment or cancellation of mortgages, pledges and other guarantees needed to finance operations.
+                    .col-sm-5
+                      img(src="img/anaya-bancario.jpg", alt="")
+
+                  p We look after solutions from an integral perspective; therefore our advice considers all tax purposes of each operation. For such purpose, we evaluate the tax treatment of interests or capital gains that arise from each transaction, as well as the compliance of related obligations such as report filing and due retention execution.
+            
+            .row.m-top-30
+              .col-sm-12.center
+                a.but(href="corporate.html") Back
+
+
+                    
+
+        
+        include ../templates/js.pug

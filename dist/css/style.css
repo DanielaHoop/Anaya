@@ -478,6 +478,48 @@ text-area {
   padding: 3px !important;
   height: 100px !important;
 }
+button.enviar {
+  display: block;
+  margin-top: 10px;
+  background: #f36f21;
+  color: #fff !important;
+  margin: 0 auto;
+  max-width: 120px;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  border: none;
+}
+button.enviar:hover {
+  background: #f96;
+  text-decoration: none;
+  font-weight: 700;
+  color: #060b32 !important;
+}
+.inline-ele {
+  padding-top: 30px;
+}
+.inline-ele a img,
+.inline-ele a p {
+  vertical-align: middle;
+}
+.inline-ele a p {
+  padding-top: 5px;
+}
+img.small {
+  max-width: 35px !important;
+  padding-right: 5px !important;
+}
+p.left {
+  text-align: left !important;
+}
+object {
+  width: 100%;
+  height: 800px;
+}
+object embed {
+  width: 100%;
+}
 .sec-home {
   position: relative;
   width: 100%;

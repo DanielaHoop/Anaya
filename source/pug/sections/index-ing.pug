@@ -1,0 +1,63 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js', 'js/jquery.translate.js', 'js/main.js'];
+
+doctype
+html(lang="es")
+	include ../templates/head.pug
+	body.trn
+		include ../templates/menu-ing.pug  
+
+		.container
+			.row.justify-content-md-center
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="about-us.html")
+							.overlay-menu
+							.menu-abs
+								img(src="img/derecho-administrativo.png")
+							img.impo(src="img/icon-couple.png", alt="icono quienes somos")
+							.impo-1
+								p About Us
+
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="practice-areas.html")
+							.overlay-menu
+							.menu-abs
+								img.menu-abs(src="img/derecho-fiscal.png")
+							img.impo(src="img/icon-gavel.png", alt="")
+							.impo-1
+								p Practice Areas
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="team.html")
+							.overlay-menu
+							.menu-abs
+								img.menu-abs(src="img/asesoria.png")
+							img.impo(src="img/icon-family.png", alt="")
+							.impo-1
+								p Team
+				//- .col-lg-2.col-sm-6.col-xs-12
+				//- 	.sec-home
+				//- 		a(href="articles.html")
+				//- 			.overlay-menu
+				//- 			.menu-abs
+				//- 				img.menu-abs(src="img/derecho-corporativo.png")
+				//- 			img.impo(src="img/icon-script.png", alt="")
+				//- 			.impo-1
+				//- 				p Articles
+				.col-lg-2.col-sm-6.col-xs-12
+					.sec-home
+						a(href="contact.html")
+							.overlay-menu
+							.menu-abs
+								img.menu-abs(src="img/derecho_bancario-1.png")
+							img.impo(src="img/icon-adress.png", alt="")
+							.impo-1
+								p Contact
+
+				
+
+		
+		include ../templates/js.pug

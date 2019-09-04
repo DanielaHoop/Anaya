@@ -1,0 +1,57 @@
+include ../templates/config.pug
+- site.page = 'Inicio'
+- scripts = ['js/jquery-3.2.1.min.js','js/bootstrap.min.js', 'js/menu.js'];
+
+doctype
+html(lang="es")
+    include ../templates/head.pug
+    body
+        include ../templates/menu-ing.pug 
+        .container
+            .row
+              .col-lg-10.justify-content-md-center.offset-md-1#primary_nav_wrap
+                ul.men
+                  li: a(href="about-us.html") About Us
+                  li.relative.active: a(href="practice-areas.html") Practice Areas
+                    ul.current-menu-item
+                      li: a(href="corporate.html") Corporate Law
+                      li: a(href="administrative.html") Administrative Law
+                      li: a(href="tax.html") Tax Law
+                  li: a(href="team.html") Team
+                  //li: a(href="article.html") Articles
+                  li: a(href="contact.html") Contact
+            .row
+                .col-sm-12.smaller
+                    h1 Practice Areas
+                    h2 Among our practice areas are:
+                    .row.justify-content-md-center
+                        .col-3.bloap
+                            img(src="img/corporativo.png", alt="")
+                            h3 Corporate Law
+                            p.left We offer advice on business planning in Mexico, including the design, creation and incorporation of investment vehicles, contracting structures and compliance with corporate obligations, as well as legal issues regarding businesses operations, including banking transactions and operations with related and independent third parties; mergers, demergers and acquisitions as well as the implementation of financial strategies.
+                            a.but(href="corporate.html") Learn more
+                        .col-3.ml-md-auto.bloap
+                            img(src="img/administrativo.png", alt="")
+                            h3 Administrative Law
+                            p.left We offer consulting and assistance in procedures and contracts with various federal, state and municipal authorities, as well as with parastatal companies. Our practice includes representation in government relations and advice on compliance with anti-corruption regulations.
+                            br
+                            br
+                            br
+                            a.but(href="administrative.html") Learn more
+                        .col-3.ml-md-auto.bloap
+                            img(src="img/fiscal.png", alt="")
+                            h3 Tax Law
+                            p.left We provide efficient and viable solutions in tax matters, for the success of their operations and business in Mexico. Thus, we assist individuals and entities in tax consulting, fiscal planning, estate planning and tax litigation.
+                            br
+                            br
+                            br
+                            br
+                            br
+                            a.but(href="tax.html") Learn more
+
+
+
+            
+
+        
+        include ../templates/js.pug
