@@ -25,6 +25,7 @@
     <meta name="msapplication-TileColor" content="#ffffff ">
     <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff ">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
     <div class="menu-destkop">
@@ -107,8 +108,11 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-3 offset-md-8">
-                        <button class="enviar btn btn-primary" type="submit">Enviar</button>
+                      <div class="col-lg-9">
+                        <div class="g-recaptcha" data-sitekey="6Lc0kbsUAAAAAKGFBjpl0cD2DiOyXrmE4PRdv_2s" data-callback="enabledSubmit"></div>
+                      </div>
+                      <div class="col-lg-3">
+                        <button class="enviar btn btn-primary" id="enviar" type="submit"  style="display: none">Enviar</button>
                       </div>
                     </div>
                   </div>
@@ -142,5 +146,10 @@
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
       <script type="text/javascript" src="js/menu.js"></script>
     </div>
+  <script>
+    function enabledSubmit(response) {
+      $("#enviar").show();
+    }
+  </script>
   </body>
 </html>
