@@ -7,12 +7,8 @@ require_once "db/Contacto.php";
 require_once "PHPMailer_5.2.4/class.phpmailer.php";
 require_once "recaptchalib.php";
 
-
-// your secret key
 $secret = "6Lc0kbsUAAAAAP_S-s5gy4MA_wt4NPnHjTjd31pi";
-// empty response
 $response = null;
-// check secret key
 $reCaptcha = new ReCaptcha($secret);
 
 // if submitted check response
